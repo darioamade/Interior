@@ -317,7 +317,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 0 4rem;
   margin: 0 auto;
@@ -359,18 +359,34 @@ body {
   color: #fff;
   border: 0.0625rem solid #fff;
 }
+.text-button{
+  border: 1px solid rgba(204, 204, 204, 0);
+  outline: none;
+  font-size:1.3rem;
+  padding: 0.5rem 0rem;
+  background-color:transparent;
+  text-transform:uppercase ;
+  font-weight: 600;
+  color: rgb(79, 78, 78);
+  letter-spacing:.05rem;
+  cursor: pointer;
+}
+.text-button:hover {
+  transform: scaleX(1.05);
+}
 
 .heading-1,
 .heading-2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
-  color: rgb(107, 107, 107);
+  color: rgb(62, 60, 60);
   text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 3rem;
+  letter-spacing: 4px;
+  /* margin-top: 8rem; */
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -379,13 +395,13 @@ body {
   color: rgb(255, 255, 255);
 }
 .heading-4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 4px;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 3px;
   margin-bottom: 2rem;
-  color: var(--color-grey-dark-3);
+  color: var(--color-grey-light-2);
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
@@ -542,13 +558,16 @@ body {
 }
 
 .plan-p {
-  font-family: "Montserrat", sans-serif;
+  font-family:sans-serif;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 2px;
-  color: var(--color-main-white);
+
+  color: var(--color-grey-light-3);
   margin-bottom: 4rem;
+    line-height: 1.7142857143;
+    letter-spacing: .05em;
+    vertical-align: baseline;
 }
 
 .heading-3 {
@@ -562,7 +581,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.heading-4 {
+/* .heading-4 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -571,7 +590,7 @@ body {
   line-height: 2;
   color: var(--color-grey-dark-3);
   margin-bottom: 2rem;
-}
+} */
 
 /* --------------- End of hero-1 ---------------- */
 
@@ -686,7 +705,74 @@ body {
   fill: rgb(70, 119, 224);
 }
 
-/* --------------- End of hero-3 ---------------- */
+/* --------------- SECTION STYLE ---------------- */
+.style {
+  background-color: var(--color-primary-white);
+  min-height: 60vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+@media screen and (max-width:800px){
+  .style{
+    min-height: 50vh;
+  }
+}
+.style-title{
+  grid-column: 7 / span 3;
+  grid-row: 1/ span 3;
+  padding: 4rem 2vw;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding: 4rem 4vh;
+  width:60%;
+}
+
+.style-img{
+  background-color:inherit;
+  grid-column: 1 / span 6;
+  grid-row: 1/ span 3;
+  background-image: url(/img/15.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:800px){
+  .style-title{
+    grid-column: 1 / span 9;
+    grid-row: 3/ span 1;
+    align-content: center;
+    justify-items: start;
+    padding: 4rem 4vh;
+    width:70%;
+
+  }
+  .style-img{
+    background-color:inherit;
+    grid-column: 1 / span 9;
+    grid-row: 1/ span 2;
+    background-image: url(/img/15.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.heading-inter-section {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  color: var(--color-grey-dark-3);
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
 /*---------------------Footer---------------------*/
 
@@ -731,7 +817,7 @@ body {
 
 .nav-down2 li a,
 .nav-down1 li a {
-  font-family:  sans-serif;
+  font-family: sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 2;
@@ -789,8 +875,8 @@ body {
 }
 
 .copy p {
-  font-family:  sans-serif;
-  font-size: .9rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 2;
   letter-spacing: 2px;
@@ -798,7 +884,6 @@ body {
   color: var(--color-grey-light-2);
   text-align: center;
 }
-
 
 .nav-down1 li:hover,
 .nav-down2 li:hover {

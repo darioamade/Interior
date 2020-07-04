@@ -754,3 +754,120 @@ body {
     border: .0625rem solid #fff;
   }
   
+  /*---------------------Footer---------------------*/
+
+.footer {
+  background-color: var(--color-grey-light);
+
+  padding: 4rem 4vw;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-down1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-down1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-down2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-down2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-down2 li a,
+.nav-down1 li a {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-transform: initial;
+  color: #292828;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-down1 li a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 4rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-down2 li a,
+  .nav-down1 li a {
+    /* font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4; */
+    letter-spacing: 2px;
+    margin-left: 0rem;
+    text-align: center;
+    line-height: 2.5;
+  }
+}
+.icons-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.icon-box-x {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: rgba(94, 90, 90, 0.166);
+  background-color: transparent;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.icon-box-x:hover {
+  fill: rgba(94, 90, 90, 0.378);
+}
+
+.copy {
+  flex: 1;
+}
+
+.copy p {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-grey-light-2);
+  text-align: center;
+}
+
+.nav-down1 li:hover,
+.nav-down2 li:hover {
+  transform: translateY(-1px);
+}
+
+/*----------------------------------------------------------------*/
