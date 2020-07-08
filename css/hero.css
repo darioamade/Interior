@@ -480,27 +480,7 @@ body {
   }
 }
 
-.heading-primary {
-  font-size: 14rem;
-  letter-spacing: 8px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0rem;
-  line-height: 1.2;
-}
-@media screen and (max-width: 610px) {
-  .heading-primary {
-    font-size: 8rem;
-    line-height: 1.5;
-  }
-}
 
-.heading-primary-2 {
-  font-size: 6rem;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  letter-spacing: 4px;
-  line-height: 1;
-}
 /* @media screen and (max-width: 610px) {
   .heading-primary {
     font-size: 6rem;
@@ -970,6 +950,19 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 435px){
+  .container {
+    width: 30rem;
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 326px){
+  .container {
+    width: 25rem;
+    height: 40rem;
+  }
+}
+
 .form__group {
   justify-content: center;
   flex-direction: column;
@@ -1207,4 +1200,100 @@ input[type="text"]:focus {
 .small-down {
   grid-row: 12 / span 1;
   grid-column: 3 / span 14;
+}
+
+
+.heading-primary {
+  font-size: 14rem;
+  letter-spacing: 8px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 610px) {
+  .heading-primary {
+    font-size: 8rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .heading-primary {
+    font-size: 8rem;
+    line-height: 1.5;
+  }
+}
+
+.heading-primary-2 {
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 910px) {
+  .heading  {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-height: 901px) {
+  .heading-primary {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  .heading-primary-2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-height: 640px) {
+  .heading-primary-2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-height: 527px) {
+  .heading {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .heading-primary-2 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .banner-btn{
+    margin-top: 0;
+    padding: .5rem 1rem;
+  }
+}
+
+@media screen and (max-height: 513px) {
+  .heading {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-height: 431px) {
+  .heading-primary {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .heading {
+    font-size: .8rem;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width:284px){
+  .heading-link{
+    font-size: .8rem;
+  }
+  .plan-p{
+    font-size: .8rem;
+  }
 }
