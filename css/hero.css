@@ -473,13 +473,19 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
 }
-@media (max-width: 447px) {
+@media (max-width: 984px) {
   .heading-link {
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+   
   }
 }
-
+@media (max-width: 447px) {
+  .heading-link {
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
 
 /* @media screen and (max-width: 610px) {
   .heading-primary {
@@ -498,6 +504,7 @@ body {
   font-size: 1.8rem;
   color: rgb(255, 255, 255);
 }
+
 .heading-4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
@@ -699,7 +706,7 @@ body {
 
 .img-container {
   background-color: inherit;
-  width: 100%;
+  min-width: 100%;
   height: 640px;
   position: relative;
   overflow: hidden;
@@ -742,6 +749,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .img-title {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 1rem;
+  }
 }
 
 .img-single:hover .bag-btn {
@@ -950,13 +965,13 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 435px){
+@media screen and (max-width: 435px) {
   .container {
     width: 30rem;
     height: 40rem;
   }
 }
-@media screen and (max-width: 326px){
+@media screen and (max-width: 326px) {
   .container {
     width: 25rem;
     height: 40rem;
@@ -1202,7 +1217,6 @@ input[type="text"]:focus {
   grid-column: 3 / span 14;
 }
 
-
 .heading-primary {
   font-size: 14rem;
   letter-spacing: 8px;
@@ -1233,7 +1247,7 @@ input[type="text"]:focus {
 }
 
 @media screen and (max-width: 910px) {
-  .heading  {
+  .heading {
     font-size: 2rem;
     line-height: 1.5;
   }
@@ -1250,7 +1264,7 @@ input[type="text"]:focus {
   }
 }
 @media screen and (max-height: 640px) {
-  .heading-primary-2{
+  .heading-primary-2 {
     font-size: 2rem;
   }
 }
@@ -1265,9 +1279,9 @@ input[type="text"]:focus {
     line-height: 1;
   }
 
-  .banner-btn{
+  .banner-btn {
     margin-top: 0;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -1280,20 +1294,31 @@ input[type="text"]:focus {
 
 @media screen and (max-height: 431px) {
   .heading-primary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1;
   }
   .heading {
-    font-size: .8rem;
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 292px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 294px) {
+  .heading-link {
+   display: none;
+  }
+  .plan-p {
+    font-size: 0.8rem;
+  }
+  .heading-primary-2 {
+    font-size: 2.3rem;
     line-height: 1;
   }
 }
 
-@media screen and (max-width:284px){
-  .heading-link{
-    font-size: .8rem;
-  }
-  .plan-p{
-    font-size: .8rem;
-  }
-}
+

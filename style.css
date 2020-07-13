@@ -97,6 +97,12 @@ html {
   
   }
 }
+@media screen and (max-width: 341px) {
+  html{  
+    font-size: 25%;
+  
+  }
+}
 
 /*@media only screen and (min-device-width: 375px) and (max-device-width: 812px)
 
